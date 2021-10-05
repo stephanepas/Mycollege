@@ -1,176 +1,260 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    width: 1100px;
-    margin: 0 auto;
+body {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 /* ajustement du header avec son image de fond */
-header{
-    position: relative;
-    max-width: 1100px;
-    height: 50em;
-    background-image: url("./assets/img/university-1100.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+header {
+  position: relative;
+  width: 100%;
+  color: white;
+}
+header img {
+  width: 100%;
 }
 /* position du texte Mycollege */
-#logo{
-    padding-left: 1%;
-    font-size: 2.5em;
-    font-style: italic;
-    font-weight: bold;
-    position: absolute;
-    top: .5%;
+#logo {
+  width: 100%;
+  padding-left: 1%;
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: bold;
+  position: absolute;
+  top: 0.5%;
 }
-/* habillage du menu dans le header */
-#header__menu{
-    width: 95%;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    list-style: none;
-    padding-top: 3%;
+/* position de la barre de navigatione */
+header nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 5%;
+  margin-right: 2%;
 }
-.header__menu__li{
-    border-right: 1px solid rgb(126, 124, 124);
+/* habillage de la barre de navigation dans le header */
+#header__menu {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  list-style: none;
 }
-#header__menu li{
-    padding: 5px;
+.header__menu__li {
+  border-right: 1px solid rgb(126, 124, 124);
 }
-#header__menu li:hover{
-    background-color: rgb(252, 189, 182);
+#header__menu li {
+  padding: 5px;
 }
-#header__menu a{
-    text-decoration: none;
-    color: rgb(126, 124, 124);
-    font-size: 1em;
-    font-weight: bold;
-    font-style: italic;
-    padding: 5px;
+#header__menu li:hover {
+  background-color: rgb(252, 189, 182);
+}
+#header__menu a {
+  text-decoration: none;
+  color: rgb(126, 124, 124);
+  font-size: 1.2em;
+  font-weight: bold;
+  font-style: italic;
+  padding: 5px;
 }
 /* position du texte et boutton du header */
-header h1{
-    width: 100%;
-    position: absolute;
-    bottom: 40%;
-    text-align: center;
-    font-size: 2.5em;
+header h1 {
+  width: 100%;
+  position: absolute;
+  bottom: 40%;
+  text-align: center;
+  font-size: 2.5em;
 }
-#button{
-    position: absolute;
-    bottom: 30%;
-    width: 100%;
-    text-align: center;    
+#button {
+  position: absolute;
+  bottom: 30%;
+  width: 100%;
+  text-align: center;
 }
-#button a{
-    text-decoration: none;
-    color: white;
-    background-color: rgb(132, 148, 200);
-    border-radius: 5px;
-    padding: 2px;
-    font-size: 2.5em;
-    font-weight: bold;
+#button a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(132, 148, 200);
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 2.5em;
+  font-weight: bold;
 }
-#button a:hover{
-    background-color: rgb(55, 61, 84);
+#button a:hover {
+  background-color: rgb(55, 61, 84);
 }
-/* mise nen place des gros boutons ronds */
-#loupe{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2% 0;
-    width: 100%;
+/* mise en place des gros boutons ronds */
+#loupe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2% 0;
+  width: 100%;
 }
-#loupe__button{
-    width: 50%;
-    display: flex;
-    justify-content: center;
+#loupe__button {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
-#loupe__button img{
-    width: 100%;
+#loupe__button img {
+  width: 100%;
 }
-.button_rond{
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-    color:rebeccapurple;
-    font-size: 1.2em;
+.button_rond {
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  color: rebeccapurple;
+  font-size: 1.2em;
 }
-#loupe__text, #volley__text{
-    font-size: 2.6em;
-    margin: 4% 0;
-    width: 50%;
-    text-align: center;
-    color: rgb(77, 77, 77);
+#loupe__text,
+#volley__text {
+  font-size: 2.6em;
+  width: 50%;
+  text-align: center;
+  color: rgb(77, 77, 77);
 }
-#loupe__text p, #volley__text p{
-    width: 60%;
-    margin:auto;
+#loupe__text p,
+#volley__text p {
+  width: 60%;
+  margin: auto;
 }
-#loupe__text p a, #volley__text p a{
-    color: rgb(201, 78, 78);
+#loupe__text p a,
+#volley__text p a {
+  color: rgb(201, 78, 78);
 }
 /* mise en place des story's */
-#story{
-    background-color: rgb(167, 102, 167);
-    width: 100%;
-    padding-bottom: 3%;
+#story {
+  background-color: rgb(167, 102, 167);
+  width: 100%;
+  padding-bottom: 3%;
 }
-#story p{
-    padding: 3% 0;
-    text-align: center;
-    font-size: 2.5em;
-    color: white;
+#story p {
+  padding: 3% 0;
+  text-align: center;
+  font-size: 2.5em;
+  color: white;
 }
-#story__img{
-    display: flex;
+#story__img {
+  display: flex;
 }
-.tom{
-    width: 50%;
-    text-align: center;
+.tom {
+  width: 50%;
+  text-align: center;
 }
-#volley{
-    display: flex;
-    align-items: center;
-    width: 100%;
+#volley {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 /* habillage du footer */
-footer nav{
-    background-color: rgb(132, 148, 200);
+footer nav {
+  background-color: rgb(132, 148, 200);
 }
-#footer__menu{
+#footer__menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.footer__li {
+  border-right: 1px solid rgb(55, 61, 84);
+}
+#footer__menu li {
+  padding: 5px;
+}
+#footer__menu li:hover {
+  background-color: rgb(55, 61, 84);
+}
+#footer__menu a {
+  text-decoration: none;
+  color: rgb(126, 124, 124);
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  padding: 5px;
+}
+footer p {
+  padding: 2% 0;
+  text-align: center;
+  font-size: 1.5em;
+  background-color: rgb(224, 225, 235);
+  color: rgb(77, 77, 77);
+}
+/* mise en place responsive taille d'ecran inf 576px */
+@media only screen and (max-width: 576px) {
+  /* retouche du header et du footer*/
+  header nav {
+    position: relative;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-.footer__li{
-    border-right: 1px solid rgb(55, 61, 84);
-}
-#footer__menu li{
-    padding: 5px;
-}
-#footer__menu li:hover{
-    background-color: rgb(55, 61, 84);
-}
-#footer__menu a{
-    text-decoration: none;
-    color: rgb(126, 124, 124);
-    font-size: 1em;
-    font-weight: bold;
-    font-style: italic;
-    color: white;
-    padding: 5px;
-}
-footer p{
-    padding: 2% 0;
+  }
+  #header__menu,
+  #footer__menu {
+    display: block;
     text-align: center;
-    font-size: 1.5em;
-    background-color: rgb(224, 225, 235);
-    color: rgb(77, 77, 77);
+    background-color: rgb(74, 82, 95);
+  }
+  .header__menu__li,
+  .footer__li {
+    border-bottom: 3px solid white;
+  }
+  #header__menu a {
+    color: white;
+  }
+  #header__menu li:hover,
+  #footer__menu li:hover {
+    background-color: rgb(32, 35, 38);
+  }
+  header h1 {
+    font-size: 1.6em;
+    bottom: 60%;
+  }
+  #button {
+    bottom: 53%;
+  }
+  #button a {
+    font-size: 1.6em;
+  }
+  #logo {
+    text-align: center;
+  }
+  /* retouche de la section des boutons ronds et du volley */
+  #loupe,
+  #volley {
+    display: block;
+    margin-bottom: 0;
+  }
+  #loupe__button {
+    width: 100%;
+    justify-content: center;
+  }
+  #loupe__text,
+  #volley__text {
+    padding: 4% 0;
+    width: 100%;
+    font-size: 1.6em;
+    background-color: rgb(224, 224, 235);
+  }
+  #loupe__text p,
+  #volley__text p {
+    width: 100%;
+  }
+  /* retouche de la section story */
+  #story {
+    display: block;
+  }
+  #story p {
+    font-size: 1.4em;
+  }
+  #story__img {
+    display: block;
+  }
+  .tom {
+    width: 100%;
+  }
+  /* retouche du footer */
+  footer p {
+    font-size: 1.2em;
+  }
 }
