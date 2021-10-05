@@ -5,7 +5,7 @@
 }
 body {
   max-width: 1100px;
-  margin: 0 auto;
+  width 100%;
 }
 /* ajustement du header avec son image de fond */
 header {
@@ -147,6 +147,9 @@ header h1 {
   align-items: center;
   width: 100%;
 }
+#volley img{
+  width: 50%;
+}
 /* habillage du footer */
 footer nav {
   background-color: rgb(132, 148, 200);
@@ -185,6 +188,10 @@ footer p {
 /* mise en place responsive taille d'ecran inf 576px */
 @media only screen and (max-width: 576px) {
   /* retouche du header et du footer*/
+  body{
+    width: 100%;
+    margin: 0;
+  }
   header nav {
     position: relative;
     width: 100%;
@@ -251,6 +258,9 @@ footer p {
     display: block;
   }
   .tom {
+    width: 100%;
+  }
+  #volley img{
     width: 100%;
   }
   /* retouche du footer */
